@@ -3,4 +3,4 @@ function main (request, element) {
   $(element).text(request);
 }
 
-$(document).ready(main);
+$(document).ready(main(prompt("What do you want to appear?"), prompt("Where?")));
