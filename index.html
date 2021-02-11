@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
-    <title>Noah Tarr’s Personal Website</title>
+    <title>Noah’s Game</title>
+    <script src="script.js"></script>
   </head>
   <body>
+    <h1>About</h1>
     <p>
-      I don’t really know what to do with this website.
-      Please excuse my web design incompetence.
+      This is a game based on the board game
+      <a href="https://en.wikipedia.org/wiki/Articulate!">Articulate!</a>
+      for revising the
+      <abbr title="General Certificate of Secondary Education">GCSE</abbr>
+      <abbr title="Oxford, Cambridge and RSA Examinations">OCR</abbr>
+      computer science currciculum.
     </p>
+    <h1>Rules</h1>
+    <p>
+      After you press Start, a pop-up will appear with a word on it.
+      Describe the word to your partner within a time limit.
+      (You decide.)
+      If they get it right, press OK without typing anything.
+      If you want to pass, type <kbd>p</kbd> and press OK.
+      If the time limit has run out, type <kbd>s</kbd> and press OK.
+      If you want to quit, press Cancel.
+    </p>
+    <button id='start' onclick="game();">Start</button>
   </body>
 </html>
