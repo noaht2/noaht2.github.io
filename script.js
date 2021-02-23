@@ -29,10 +29,15 @@ function shuffle(array) {
   return array;
 }
 
+function record_score(text) {
+    para = document.querySelector("#score");
+    para.textContent = text;
+}
+
 function game() {
     score = 0;
+    record_score("");
     toplevel: while (score < words.length) {
-	console.log("Score: " + score);
 	round: for(let word of shuffle(words[score])) {
 	    switch (prompt(word)) {
 	    case "s":
@@ -46,5 +51,6 @@ function game() {
 		break;
 	    }
 	}
+	record_score("Score: " + score);
     }
 }
